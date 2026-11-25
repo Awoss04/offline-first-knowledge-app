@@ -1,0 +1,30 @@
+# Netcup Webhosting - Claude Code Masterclass Lern-App
+DirectoryIndex index.html
+
+# UTF-8 Zeichensatz
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html .css .js .json .svg
+
+# Directory Browsing deaktivieren
+Options -Indexes
+
+# MIME-Types
+<IfModule mod_mime.c>
+  AddType text/html .html
+  AddType application/json .json
+  AddType text/css .css
+  AddType application/javascript .js
+  AddType image/svg+xml .svg
+</IfModule>
+
+# Sicherheits-Header
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Gzip / Deflate Komprimierung
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css application/json application/javascript image/svg+xml
+</IfModule>

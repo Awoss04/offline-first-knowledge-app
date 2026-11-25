@@ -1,0 +1,43 @@
+{
+  "titel": "DevSecOps & Web Engineering Knowledge Base",
+  "version": "1.0.0",
+  "autor": "Artur Walz",
+  "themen": [
+    {
+      "id": "sec-01",
+      "kategorie": "IT-Sicherheit & BSI",
+      "titel": "BSI IT-Grundschutz: Zero-Trust fuer moderne Webapplikationen",
+      "zusammenfassung": "Architektur-Vorgaben und Absicherung von Frontend-Assets gemaess BSI-Standards.",
+      "inhalt": "Zero-Trust erfordert die strikte Validierung aller Inputs, den vollstaendigen Verzicht auf ungepruefte Third-Party-CDNs sowie das Setzen robuster HTTP-Sicherheits-Header wie Content-Security-Policy, X-Frame-Options und X-Content-Type-Options.",
+      "tags": [
+        "Security",
+        "BSI",
+        "Zero-Trust"
+      ]
+    },
+    {
+      "id": "web-02",
+      "kategorie": "Web Engineering",
+      "titel": "Offline-First Single-File-Architektur",
+      "zusammenfassung": "Kompilierung aller Assets (JS, CSS, SVGs, JSON) in ein einziges portables Dokument.",
+      "inhalt": "Durch automatisierte Inlining-Pipelines via Node.js entstehen extrem schnelle, DSGVO-konforme Webanwendungen, die vollstaendig ohne Backend-Datenbank und ohne Tracking-Cookies funktionieren.",
+      "tags": [
+        "Architecture",
+        "Offline-First",
+        "Performance"
+      ]
+    },
+    {
+      "id": "a11y-03",
+      "kategorie": "Barrierefreiheit & UX",
+      "titel": "WCAG AA Kontrastvorgaben und semantisches HTML5",
+      "zusammenfassung": "Gewaehrleistung hoechster Zugriffsstandards durch tokenbasiertes Design.",
+      "inhalt": "Alle Farbwerte werden ueber semantische CSS Custom Properties gesteuert. Das Farbschema garantiert ein Kontrastverhaeltnis von mindestens 4.5:1 fuer Fliesstexte gemaess WCAG 2.1 AA.",
+      "tags": [
+        "Accessibility",
+        "WCAG",
+        "CSS"
+      ]
+    }
+  ]
+}
